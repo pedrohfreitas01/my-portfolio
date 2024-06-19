@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* https: //paletadecolores.online/pt/roxa/ */
+
+:root {
+    --text-color: #874CCC;
+    --bg-color: #10439F;
+    --text-white: #ffff;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito',sans-serif;
+}
+
+.intro{
+    height: 100vh;
+    width: 100%;
+    background-size: 30%;
+    background-color: #4c007d;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.namePortfolio{
+    color: var(--text-white);
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.namePortfolio span{
+    color: var(--text-color)
+}
+
+ul{
+    margin-right: 80px;
+}
+
+li,a{
+    color: var(--text-white);
+    display: inline-block;
+    font-size: 25px;
+    list-style: none;
+    margin-right: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #F27BBD;
+    transition: 0.5s;
+    
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: calc(100% - 20%);
+}
+
+
+.me{
+    margin-right: 20px;
+    color: var(--text-white);
+    text-align: left;
+    padding: 20px;
+    font-size: 40px;
+    
+}
+
+
+
+img {
+    max-width: 100%;
+    max-height: 360px;
+    width: auto;
+    height: auto;
+    border-radius: 94px 10px 100px 0px;
+}
