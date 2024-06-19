@@ -4,8 +4,11 @@
 
 :root {
     --text-color: #874CCC;
-    --bg-color: #10439F;
+    --bg-color: #1b004b;
+    --bg2-color: #4c007d;
+    --bg3-color: #7f00b2;
     --text-white: #ffff;
+    --text2-pink: #f988ff;
 }
 
 
@@ -20,7 +23,7 @@
     height: 100vh;
     width: 100%;
     background-size: 30%;
-    background-color: #4c007d;
+    background-color: var(--bg-color)
 }
 
 nav{
@@ -67,7 +70,6 @@ main {
     height: calc(100% - 20%);
 }
 
-
 .me{
     margin-right: 20px;
     color: var(--text-white);
@@ -77,12 +79,52 @@ main {
     
 }
 
-
-
 img {
     max-width: 100%;
     max-height: 360px;
     width: auto;
     height: auto;
     border-radius: 94px 10px 100px 0px;
+}
+
+
+.about{
+    display: flex;
+    background-color: var(--bg2-color);
+    align-items: center;
+    justify-content: center;
+    padding: 60px 15%;
+}
+
+.aboutMeText{
+    margin-left: 30px;
+    padding: 20px;
+    
+}
+
+.about h2{
+    color: var(--text-white);
+    font-size: 75px;
+}
+
+.about p{
+    color: var(--text2-pink);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.aboutMeText button {
+    margin-top: 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.aboutMeText button:hover {
+    background-color: #2980b9;
 }
