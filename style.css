@@ -79,14 +79,13 @@ main {
     
 }
 
-img {
+main img {
     max-width: 100%;
     max-height: 360px;
     width: auto;
     height: auto;
     border-radius: 94px 10px 100px 0px;
 }
-
 
 .about{
     display: flex;
@@ -128,3 +127,9 @@ img {
 .aboutMeText button:hover {
     background-color: #2980b9;
 }
+
+
+.project{
+    background-color: var(--bg3-color);
+}
+
