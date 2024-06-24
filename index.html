@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link
+        rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Pedro Cafe Portfolio</title>
 </head>
 <body>
@@ -51,68 +54,45 @@
 
 
     <section class="project"> 
-        <h1 id="projectH1">My Projects</h1>
-        <div class="container-projects">
-            <div class="swiper tranding-slider">
-                <div class="swiper-wraper">
-                    <!-- Slide start -->
-                    <div class="swiper-slide tranding-slide">
-                        <div class="tranding-slide-img">
-                            <img src="img/projectsImg/dictionaryAppFoto.jpg" alt="projectDictionary">
-                        </div>
-                        <div class="trading-slide-content">
-                            <h2 class="projectName-slide">Dictionary App</h2>
-                            <h3 class="projectStackIcone">
-                                <i class="fa-brands fa-js fa-fade" style="color: #FFD43B;"></i>
-                                <i class="fa-brands fa-html5" style="color: #e42525;"></i>
-                                <i class="fa-brands fa-css3-alt" style="color: #74C0FC;"></i>
-                            </h3>
+        <h1 id="myProjectH1">My Projects</h1>
+        <div class="container-project">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <img src="img/projectsImg/pokeFoto.jpg" alt="pokeApp">
+                            <h2>PokeCard App</h2>
+                            <p>App: ApiRest , JS,CSS,HTML</p>
+                            <a href="https://pokemoncardgenerate-pedrocafe.vercel.app/" target="_blank"><button>See Project</button></a>
                         </div>
                     </div>
-                    
-                    <!-- Slide End -->
-                    <!-- Slide start -->
-                    <div class="swiper-slide tranding-slide">
-                        <div class="tranding-slide-img">
-                            <img src="img/projectsImg/pokeFoto.jpg" alt="projectDictionary">
-                        </div>
-                        <div class="trading-slide-content">
-                            <h2 class="projectName-slide">Pokemon App</h2>
-                            <h3 class="projectStackIcone">
-                                <i class="fa-brands fa-js fa-fade" style="color: #FFD43B;"></i>
-                                <i class="fa-brands fa-html5" style="color: #e42525;"></i>
-                                <i class="fa-brands fa-css3-alt" style="color: #74C0FC;"></i>
-                            </h3>
+
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <img src="img/projectsImg/toDoFOTO.jpg" alt="toDoApp">
+                            <h2>TO-DO-APP</h2>
+                            <p>App: JS,CSS,HTML</p>
+                            <a href="https://to-do-list-js-topaz-nine.vercel.app/" target="_blank" ><button>See Project</button></a>
                         </div>
                     </div>
-                    
-                    <!-- Slide End -->
-                    <!-- Slide start -->
-                    <div class="swiper-slide tranding-slide">
-                        <div class="tranding-slide-img">
-                            <img src="img/projectsImg/toDoFOTO.jpg" alt="projectDictionary">
-                        </div>
-                        <div class="trading-slide-content">
-                            <h2 class="projectName-slide">ToDo App</h2>
-                            <h3 class="projectStackIcone">
-                                <i class="fa-brands fa-js fa-fade" style="color: #FFD43B;"></i>
-                                <i class="fa-brands fa-html5" style="color: #e42525;"></i>
-                                <i class="fa-brands fa-css3-alt" style="color: #74C0FC;"></i>
-                            </h3>
+
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <img src="img/projectsImg/dictionaryAppFoto.jpg" alt="dictionayApp">
+                            <h2>Dictionary App</h2>
+                            <p>App: ApiRest , JS,CSS,HTML</p>
+                            <a href="https://dictionaryapp-ten.vercel.app/" target="_blank"><button>See Project</button> </a>
                         </div>
                     </div>
-                    
-                    <!-- Slide End -->
                 </div>
-                <div class="slider-control">
-                    <div class="swiper--button-prev slider-arrow">
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </div>
-                    <div class="swiper--button-prev slider-arrow">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
+            
+            <ul class="control" id="custom-control">
+                <li class="prevent"><ion-icon  class="arrow" name="arrow-back-outline"></ion-icon></li>
+                <li class="next"><ion-icon class="arrow" name="arrow-forward-outline"></ion-icon></li>
+            </ul>
+            
+            
+            
             </div>
         </div>
     </section>
@@ -128,9 +108,9 @@
 
 
 
-
-
-
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

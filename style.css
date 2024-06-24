@@ -128,57 +128,148 @@ main img {
     background-color: #2980b9;
 }
 
-
-.project {
-    background-color: var(--bg3-color);
-    padding: 50px 0;
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    min-height: 100vh;   
+    background-color: var(--bg-color);
+    overflow: hidden;
 }
 
-.project h1 {
-    text-align: center;
+.project h1{
     color: var(--text-white);
-    margin-bottom: 30px;
+    margin-bottom: 170px ;
+    font-size: 40px;
+    text-decoration: underline;
 }
 
-.container-projects {
-    width: 80%;
-    margin: 0 auto;
+.container-project{
+ display: flex;
+ flex-direction: column;
+ justify-self: center;
+ align-items: center;
+ width: 80%;
 }
 
-.swiper {
+.swiper{
     width: 100%;
     height: 100%;
 }
 
-.swiper-slide {
-    background-color: var(--bg2-color);
-    border-radius: 10px;
+.swiper-slide{
+    max-width: 700px;
+    height: fit-content;
+    border-radius: 15px;
+    /* aqui pode ser que de um bugzin no js colocar 0 */
+    margin: 20px 0px 30px;       
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    box-shadow:  0 8px 10px rgba(0, 0, 0, 0.5), inset 0 2px 2px rgba(255, 255, 255, 0.2);
+    cursor: grab;
 }
 
-.tranding-slide-img img {
+.project img {
     width: 100%;
-    height: auto;
+    pointer-events: none;
+    user-select: none;
 }
 
-.tranding-slide-content {
-    padding: 20px;
+.content{
+    position: relative;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-rows: 2fr  0.1fr 0.2fr 0.2fr;
+    gap: 10px;
+    height: 100%;
+    padding: 12px;
+    background: rgba(104, 104, 104, 0.5);
+    color: #fff;
+    user-select: none;
 }
 
-.slider-arrow {
+.content::before,.content::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    background: linear-gradient(180deg,
+        rgba(30,119,95),
+        rgba(55,141,167),
+        rgba(93,59,174));
+}
+
+
+.content img{
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.content h2{
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.content p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+.project a{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color:var(--text2-pink);
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+    outline: 0;
+    border-radius: 5px;
+    padding: 10px ;
+    margin-bottom: 5px;
+    box-shadow: 0 0 5px #eee;
     cursor: pointer;
-    color: var(--text-white);
+    transition: all 0.3s ease;
 }
 
-.swiper-pagination {
-    bottom: 10px;
+.project button{
+    text-decoration: none;
+    border: none;
+    background: var(--text2-pink);
+    cursor: pointer;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-    color: var(--text-white);
+
+.control{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    list-style: none;
+    gap: 14px;
+}
+
+.control li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #99559b, #3b3d8a);
+    box-shadow: 0 4px 6px rgba(red, green, blue, alpha);
+    padding: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.arrow{
+    font-size: 1.5rem;
+    color: white;
 }
