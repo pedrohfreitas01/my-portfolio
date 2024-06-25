@@ -1,0 +1,17 @@
+- css para telas menores 
+- paleta de cores
+
+- intro
+    - perfumaria no Nome
+    -trocar foto
+
+- about
+    - arquivar o resume
+    - melhorar e diminuir a foto
+
+- project
+    - background colocar animado 
+    - mudar o carrolsel 
+
+- footer
+    - dimunuir o pouco o tamnha da section
