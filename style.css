@@ -93,6 +93,8 @@ main img {
     align-items: center;
     justify-content: center;
     padding: 60px 15%;
+    height: 100vh;
+    width: 100%;
 }
 
 .aboutMeText{
@@ -110,6 +112,17 @@ main img {
     color: var(--text2-pink);
     font-size: 24px;
     margin-bottom: 20px;
+}
+
+.perfilAbout {
+    width: 550px;
+    /* Ajuste o tamanho conforme necessário */
+    height: 550px;
+    /* Ajuste o tamanho conforme necessário */
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    
 }
 
 .aboutMeText button {
@@ -323,3 +336,109 @@ footer p{
 .social a:hover{
     transform: scale(1.2);
 }
+
+
+
+
+
+/* Media Queries */
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+    .namePortfolio {
+        font-size: 30px;
+    }
+
+    nav ul {
+        margin-right: 20px;
+    }
+
+    li,
+    a {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .me {
+        margin-right: 0;
+        font-size: 30px;
+    }
+
+    main img {
+        width: 80%;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .aboutMeText {
+        margin-left: 0;
+    }
+
+        .perfilAbout {
+            width: 250px;
+          
+            height: 250px;
+            /* Ajuste o tamanho conforme necessário */
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+    .project {
+        padding: 20px;
+    }
+
+    .project h1 {
+        font-size: 30px;
+    }
+
+    .container-project {
+        width: 100%;
+    }
+
+    .swiper-slide {
+        max-width: 100%;
+    }
+
+    .content img {
+        border-radius: 8px;
+    }
+}
+
+/* Tablets and Small Desktops */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .namePortfolio {
+        font-size: 35px;
+    }
+
+    li,
+    a {
+        font-size: 22px;
+    }
+
+    main img {
+        width: 90%;
+        height: auto;
+        border-radius: 18px;
+    }
+
+    .about {
+        padding: 40px 10%;
+    }
+
+    .project {
+        padding: 40px;
+    }
+
+    .project h1 {
+        font

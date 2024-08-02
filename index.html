@@ -5,17 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link
-        rel="stylesheet"
-     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <title>Pedro Cafe Portfolio</title>
 </head>
 <body>
     
-    <section class="intro" id="intro">
+    <header class="intro" id="intro">
         <nav>
-            <h2 class="namePortfolio">My <span>Portfolio</span></h2>
+            <h1 class="namePortfolio">My <span>Portfolio</span></h1>
             <ul>
                 <li><a href="#intro">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -23,100 +20,85 @@
                 <li><a href="#contact">Contact-me</a></li>
             </ul>
         </nav>
-
-
+        
         <main>
             <div class="me">
-                <h1>Pedro Cafe</h1>
+                <h2>Pedro Cafe</h2>
                 <h3>Junior Web Developer</h3>
             </div>
-            <img  class="img-container" src="img/introNotbok.jpg" alt="">
-            
+            <img class="img-container" src="img/introNotbok.jpg" alt="Pedro Cafe's Introduction Image">
         </main>
-    </section>
-
+    </header>
 
     <section class="about" id="about">
-        <img src="img/perfilPedroPixarDisney02.jpg" alt="PedroPerfil" class="perfilAbout">
+        <img src="img/perfilGithub.jpg" alt="Pedro Cafe's Profile" class="perfilAbout">
         <div class="aboutMeText">
             <h2>About Me</h2>
-            <p>I am currently a Computer Science student ,  with a focus on Frontend Development.
-            <br>Proficient in JavaScript <i class="fa-brands fa-js fa-fade" style="color: #FFD43B;"></i> ,
-                            HTML <i class="fa-brands fa-html5" style="color: #e42525;"></i>, and 
-                            CSS <i class="fa-brands fa-css3-alt" style="color: #74C0FC;"></i>, and 
-                            I am also expanding my skills with 
-                            Cypress <i class="fa-solid fa-vials" style="color: #63E6BE;"></i>for end-to-end testing 
+            <p>I am currently a Computer Science student with a focus on Frontend Development.
+                <br>Proficient in JavaScript <i class="fa-brands fa-js fa-fade" style="color: #FFD43B;"></i>,
+                HTML <i class="fa-brands fa-html5" style="color: #e42525;"></i>, and CSS <i class="fa-brands fa-css3-alt" style="color: #74C0FC;"></i>,
+                and I am also expanding my skills with Cypress <i class="fa-solid fa-vials" style="color: #63E6BE;"></i> for end-to-end testing.
             </p> 
-            <button>Dowload Resume</button>
+            <button>Download Resume</button>
         </div>
     </section>
 
-
-
-    <section class="project" id="project"> 
-        <h1 id="myProjectH1">My Projects</h1>
+    <section class="project" id="project">
+        <h1>My Projects</h1>
         <div class="container-project">
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="content">
-                            <img src="img/projectsImg/pokeFoto.jpg" alt="pokeApp">
+                            <img src="img/projectsImg/pokeFoto.jpg" alt="PokeCard App Screenshot">
                             <h2>PokeCard App</h2>
-                            <p>App: ApiRest , JS,CSS,HTML</p>
+                            <p>App: ApiRest, JS, CSS, HTML</p>
                             <a href="https://pokemoncardgenerate-pedrocafe.vercel.app/" target="_blank"><button>See Project</button></a>
                         </div>
                     </div>
 
                     <div class="swiper-slide">
                         <div class="content">
-                            <img src="img/projectsImg/toDoFOTO.jpg" alt="toDoApp">
+                            <img src="img/projectsImg/toDoFOTO.jpg" alt="TO-DO App Screenshot">
                             <h2>TO-DO-APP</h2>
-                            <p>App: JS,CSS,HTML</p>
-                            <a href="https://to-do-list-js-topaz-nine.vercel.app/" target="_blank" ><button>See Project</button></a>
+                            <p>App: JS, CSS, HTML</p>
+                            <a href="https://to-do-list-js-topaz-nine.vercel.app/" target="_blank"><button>See Project</button></a>
                         </div>
                     </div>
 
                     <div class="swiper-slide">
                         <div class="content">
-                            <img src="img/projectsImg/dictionaryAppFoto.jpg" alt="dictionayApp">
+                            <img src="img/projectsImg/dictionaryAppFoto.jpg" alt="Dictionary App Screenshot">
                             <h2>Dictionary App</h2>
-                            <p>App: ApiRest , JS,CSS,HTML</p>
-                            <a href="https://dictionaryapp-ten.vercel.app/" target="_blank"><button>See Project</button> </a>
+                            <p>App: ApiRest, JS, CSS, HTML</p>
+                            <a href="https://dictionaryapp-ten.vercel.app/" target="_blank"><button>See Project</button></a>
                         </div>
                     </div>
                 </div>
-            
-            <ul class="control" id="custom-control">
-                <li class="prevent"><ion-icon  class="arrow" name="arrow-back-outline"></ion-icon></li>
-                <li class="next"><ion-icon class="arrow" name="arrow-forward-outline"></ion-icon></li>
-            </ul>
-            
-            
-            
+
+                <ul class="control" id="custom-control">
+                    <li class="prevent"><ion-icon class="arrow" name="arrow-back-outline"></ion-icon></li>
+                    <li class="next"><ion-icon class="arrow" name="arrow-forward-outline"></ion-icon></li>
+                </ul>
             </div>
         </div>
     </section>
 
-
-
-    <section class="contact" id="contact">
-        <footer>
-            <h4>Pedro Cafe</h4>
-            <p>More information</p>
-            <div class="social">
-                <a href="https://github.com/pedrohfreitas01" target="_blank" ><img src="img/github.png" alt="github"></a>
-                <a href="mailto:pedrofreitasph49@gmail.com" target="_blank" ><img src="img/gmail.png" alt="gmail"></a>
-                <a href="https://www.linkedin.com/in/pedro-cafe/" target="_blank" ><img src="img/linkedin.png" alt="linkedin"></a>
-            </div>
-        </footer>
-    </section>
-
-
-
-
-
-
-
+    <footer class="contact" id="contact">
+        <h4>Pedro Cafe</h4>
+        <p>More information</p>
+        <div class="social">
+            <a href="https://github.com/pedrohfreitas01" target="_blank" aria-label="GitHub Profile">
+                <img src="img/github.png" alt="GitHub Logo">
+            </a>
+            <a href="mailto:pedrofreitasph49@gmail.com" target="_blank" aria-label="Send Email">
+                <img src="img/gmail.png" alt="Gmail Logo">
+            </a>
+            <a href="https://www.linkedin.com/in/pedro-cafe/" target="_blank" aria-label="LinkedIn Profile">
+                <img src="img/linkedin.png" alt="LinkedIn Logo">
+            </a>
+        </div>
+    </footer>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
